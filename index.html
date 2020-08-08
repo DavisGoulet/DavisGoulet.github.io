@@ -1,11 +1,383 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174679732-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-<h1>Configuration Test</h1>
+    gtag('config', 'UA-174679732-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davis Goulet | Portfolio</title>
+    <link rel="stylesheet" href="styling.css">
+  </head>
+  <body>
 
-</body>
-</html>
+    <!----------------------------------->
+    <!------------Main Header------------>
+    <!----------------------------------->
+    <section class="main-header">
+        <img class="logo" src="assets/logo.svg">
+        <a href="https://www.linkedin.com/in/davis-goulet-79214b175/" target="_blank"><img class="media-link" src="assets/linkedin_logo.svg"></a>
+        <a href="https://github.com/DavisGoulet" target="_blank"><img class="media-link" src="assets/github_logo.svg"></a>
+        <a href="mailto:davis.goulet@gmail.com" target="_blank"><img class="media-link" src="assets/mail_logo.svg"></a>
+    </section>
+
+    <!----------------------------------->
+    <!---------Side Navigation----------->
+    <!----------------------------------->
+    <section class="side-nav">
+        <a href="#welcome-section"><span id="nav-icon-1" class="nav-dot-unselected"></span></a>
+        <a href="#project-section"><span id="nav-icon-2" class="nav-dot-unselected"></span></a>
+        <!--<a href="#experience-section"><span id="nav-icon-3" class="nav-dot-unselected"></span></a>-->
+        <!--<a href="#about-section"><span id="nav-icon-4" class="nav-dot-unselected"></span></a>-->
+        <!--<a href="#contact-section"><span id="nav-icon-5" class="nav-dot-unselected"></span></a>-->
+    </section>
+
+    <!----------------------------------->
+    <!---------Welcome Section----------->
+    <!----------------------------------->
+    <section id="welcome-section" class="welcome-section">
+        <a href="welcome-section"></a>
+        <div class="welcome-section-content">
+
+            <div class="welcome-header">
+                <img class="developer" src="assets/developer.svg">
+                <p class="welcome-name">DAVIS | GOULET</p>
+            </div>
+
+            <p class="welcome-paragraph">I'm a software developer with a passion for graphic design, and am about to graduate with
+                a Master of Computer Science. From front-end web development to back-end servers and databases, 
+                distributed computing to app development, I have a love of everything computer science.
+            </p>
+
+            <div class="welcome-contact-box">
+                <p class=welcome-contact-text>Interested in working together? </p>
+                <a class="welcome-contact-link" href="mailto:davis.goulet@gmail.com">Reach out to me</a>
+            </div>
+
+        </div>
+        <div class="welcome-footer">
+            <img class="binary-footer-large" src="assets/binary_footer_large.svg">
+            <img class="binary-footer-medium" src="assets/binary_footer_medium.svg">
+            <img class="binary-footer-small" src="assets/binary_footer_small.svg">
+            <div class="black-bar"></div>
+            <img class="git-arrow-footer" src="assets/git_diagram.svg">
+        </div>
+    </section>
+
+    <!----------------------------------->
+    <!---------Project Section----------->
+    <!----------------------------------->
+    <section id="project-section" class="project-section">
+        <a href="project-section"></a>
+        <p class="projects-title">Projects</p>
+
+        <!------------->
+        <!--Project 1-->
+        <!------------->
+        <div class=project>
+            <div class=project-name-div><p class="project-name">Newsletter Django Web App</p></div>
+            <div class=project-tools-list>
+                <div class=logo-name-pair>  
+                    <img class="project-app-logo" src="assets/project_logos/python_logo.svg">
+                    <p class="project-app-name">Python</p>
+                </div>
+                <div class=vertical-line></div>
+                <div class=logo-name-pair>  
+                    <img class="project-app-logo" src="assets/project_logos/django_logo.svg">
+                    <p class="project-app-name">Django</p>
+                </div>
+                <div class=vertical-line></div>
+                <div class=logo-name-pair>  
+                    <img class="project-app-logo" src="assets/project_logos/docker_logo.svg">
+                    <p class="project-app-name">Docker</p>
+                </div>
+                <div class=vertical-line></div>
+                <div class=logo-name-pair>  
+                    <img class="project-app-logo" src="assets/project_logos/nginx_logo.svg">
+                    <p class="project-app-name">Nginx</p>
+                </div>
+                <div class=vertical-line></div>
+                <div class=logo-name-pair>  
+                    <img class="project-app-logo" src="assets/project_logos/aws_ec2_logo.svg">
+                    <p class="project-app-name">AWS EC2</p>
+                </div>
+                <div class=vertical-line></div>
+                <div class=logo-name-pair>  
+                    <img class="project-app-logo" src="assets/project_logos/postgresql_logo.svg">
+                    <p class="project-app-name">PostgreSQL</p>
+                </div>
+            </div>
+            <div class=project-description>
+                 <ul>
+                    <li class="project-bullet-point">Multi-container docker application consisting of Nginx, a Django web app, and a PostgreSQL database. Incoming requests enter through the Nginx container which either passes them on to a container running Gunicorn and Django or returns static files directly.</li>
+                    <li class="project-bullet-point">A REST API was incorporated into the application using the Django Rest Framework, allowing users to subscribe to a newsletter.</li>
+                    <li class="project-bullet-point">Static files were automatically moved to the Nginx container during the build phase. This allowed for faster response times.</li>
+                    <li class="project-bullet-point">The application was hosted on AWS EC2 and configured with a custom domain. Let's Encrypt was used for SSL certificates, along with a script that would renew the certificate when it approached it's expiration date.</li>
+                </ul> 
+            </div>
+            <div class=project-images>
+        
+            </div>
+        </div>
+        <div class="black-bar-divider"></div>
+        <!------------->
+        <!--Project 2-->
+        <!------------->
+        <div class=project>
+            <div class=project-name-div><p class="project-name">Distributed View Counter Application</p></div>
+            <div class=project-tools-list>
+                <div class=logo-name-pair>  
+                    <img class="project-app-logo" src="assets/project_logos/java_logo.svg">
+                    <p class="project-app-name">Java</p>
+                </div>
+                <div class=vertical-line></div>
+                <div class=logo-name-pair>  
+                    <img class="project-app-logo" src="assets/project_logos/scene_builder_logo.png">
+                    <p class="project-app-name">JavaFX + Scene Builder</p>
+                </div>
+            </div>
+            <div class=project-description>
+                <ul>
+                    <li class="project-bullet-point">Distributed application designed to keep a consistent count of the number of views. This would be used in situations where one machine is not capable of processing all requests.</li>
+                    <li class="project-bullet-point">Consistency was based on the eventual consistency model. This model is where all nodes will eventually enter a consistent state if no new updates are made for a given amount of time.</li>
+                    <li class="project-bullet-point">Worker applications process requests and send view count information to a central application through socket communication. The central application periodically sends out updated view counts to keep all workers approximately synchronized.</li>
+                </ul>
+            </div>
+            <div class=project-images>
+        
+            </div>
+        </div>
+        <div class="black-bar-divider"></div>
+        <!------------->
+        <!--Project 3-->
+        <!------------->
+        <div class=project>
+            <div class=project-name-div><p class="project-name">MacOS Pomodoro Timer Application</p></div>
+            <div class=project-tools-list>
+                <div class=logo-name-pair>  
+                    <img class="project-app-logo" src="assets/project_logos/swift_logo.svg">
+                    <p class="project-app-name">Swift</p>
+                </div>
+                <div class=vertical-line></div>
+                <div class=logo-name-pair>  
+                    <img class="project-app-logo" src="assets/project_logos/xcode_logo.svg">
+                    <p class="project-app-name">Xcode</p>
+                </div>
+            </div>
+            <div class=project-description>
+                <ul>
+                    <li class="project-bullet-point">MacOS application built using Swift and Xcode.</li>
+                    <li class="project-bullet-point">The application lives in the menu bar (where Wifi, Bluetooth, time, etc. are located) for easy access. The user simply has to click on the app's icon for the UI to open and click anywhere else for it to disappear (but still run in the background).</li>
+                    <li class="project-bullet-point">Customizable timer settings and count down visualization.</li>
+                    <li class="project-bullet-point">Alarm triggers when the timer is up.</li>
+                </ul>
+            </div>
+            <div class=project-images>
+        
+            </div>
+        </div>
+        <div class="black-bar-divider"></div>
+        <!------------->
+        <!--Project 4-->
+        <!------------->
+        <div class=project>
+            <div class=project-name-div><p class="project-name">Personal Website</p></div>
+            <div class=project-tools-list>
+                <div class=logo-name-pair>  
+                    <img class="project-app-logo" src="assets/project_logos/html5_logo.svg">
+                    <p class="project-app-name">HTML</p>
+                </div>
+                <div class=vertical-line></div>
+                <div class=logo-name-pair>  
+                    <img class="project-app-logo" src="assets/project_logos/css3_logo.svg">
+                    <p class="project-app-name">CSS</p>
+                </div>
+                <div class=vertical-line></div>
+                <div class=logo-name-pair>  
+                    <img class="project-app-logo" src="assets/project_logos/javascript_logo.svg">
+                    <p class="project-app-name">Javascript</p>
+                </div>
+                <div class=vertical-line></div>
+                <div class=logo-name-pair>  
+                    <img class="project-app-logo" src="assets/project_logos/adobe_xd_logo.svg">
+                    <p class="project-app-name">Adobe XD</p>
+                </div>
+            </div>
+            <div class=project-description>
+                 <ul>
+                    <li class="project-bullet-point">Custom personal portfolio website created using bare HTML, CSS, and Javascript. No additional libraries or templates where used. </li>
+                    <li class="project-bullet-point">Website first underwent several mockup iterations using Adobe XD. Some SVG graphics were also created using Adobe Illustrator.</li>
+                    <li class="project-bullet-point">Media queries used for responsive design when using different screen sizes.</li>
+                    <li class="project-bullet-point">Custom page position animation that tracks what section of the webpage the user is currently in. Also acts as a quick way to jump to specific sections through the use of hyperlinks.</li>
+                    <li class="project-bullet-point">Website hosted through Github Pages, and configured with custom domain.</li>
+                    <li class="project-bullet-point">Integrates Google Analytics to track and report website traffic.</li>
+                </ul> 
+            </div>
+            <div class=project-images>
+        
+            </div>
+        </div>
+        <div class="black-bar-divider"></div>
+        <!------------->
+        <!--Project 5-->
+        <!------------->
+        <div class=project>
+            <div class=project-name-div><p class="project-name">Apache Spark Agent-based Simulator</p></div>
+            <div class=project-tools-list>
+                <div class=logo-name-pair>  
+                    <img class="project-app-logo" src="assets/project_logos/apache_spark_logo.svg">
+                    <p class="project-app-name">Apache Spark</p>
+                </div>
+                <div class=vertical-line></div>
+                <div class=logo-name-pair>  
+                    <img class="project-app-logo" src="assets/project_logos/hadoop_logo.svg">
+                    <p class="project-app-name">Hadoop</p>
+                </div>
+                <div class=vertical-line></div>
+                <div class=logo-name-pair>  
+                    <img class="project-app-logo" src="assets/project_logos/aws_emr_logo.svg">
+                    <p class="project-app-name">AWS EMR</p>
+                </div>
+            </div>
+            <div class=project-description>
+                 <ul>
+                    <li class="project-bullet-point">Agent-based simulator designed to run parallelly over a collection of nodes. Each node is responsible for processing agent-interactions for a specific region of the environment. </li>
+                    <li class="project-bullet-point">Each agent has a range regarding which other agents it can interact with. If this range overlapped another region that a different node was responsible for processing, a phantom copy of the agent would be sent to that node in case an interaction occurred.</li>
+                    <li class="project-bullet-point">Simulator was run using AWS Elastic MapReduce (EMR).</li>
+                </ul> 
+            </div>
+            <div class=project-images>
+        
+            </div>
+        </div>  
+        <div class="black-bar-divider"></div>
+        <!------------->
+        <!--Project 6-->
+        <!------------->
+        <div class=project>
+            <div class=project-name-div><p class="project-name">Serverless Web App</p></div>
+            <div class=project-tools-list>
+                <div class=logo-name-pair>  
+                    <img class="project-app-logo" src="assets/project_logos/aws_lambda_logo.svg">
+                    <p class="project-app-name">AWS Lambda</p>
+                </div>
+                <div class=vertical-line></div>
+                <div class=logo-name-pair>  
+                    <img class="project-app-logo" src="assets/project_logos/aws_s3_logo.svg">
+                    <p class="project-app-name">AWS S3</p>
+                </div>
+                <div class=vertical-line></div>
+                <div class=logo-name-pair>  
+                    <img class="project-app-logo" src="assets/project_logos/aws_dynamodb_logo.svg">
+                    <p class="project-app-name">AWS DynamoDB</p>
+                </div>
+                <div class=vertical-line></div>
+                <div class=logo-name-pair>  
+                    <img class="project-app-logo" src="assets/project_logos/aws_api_gateway_logo.svg">
+                    <p class="project-app-name">AWS API Gateway</p>
+                </div>
+                <div class=vertical-line></div>
+                <div class=logo-name-pair>  
+                    <img class="project-app-logo" src="assets/project_logos/json_logo.svg">
+                    <p class="project-app-name">JSON</p>
+                </div>
+                <div class=vertical-line></div>
+                <div class=logo-name-pair>  
+                    <img class="project-app-logo" src="assets/project_logos/rest_logo.svg">
+                    <p class="project-app-name">REST Architecture</p>
+                </div>
+            </div>
+            <div class=project-description>
+                 <ul>
+                    <li class="project-bullet-point">Web-form application used to collect data.</li>
+                    <li class="project-bullet-point">Client-side part of the application was stored in a publically availabe AWS S3 bucket. A custom domain then pointed to the bucket, allowing web browsers to access and retrieve it.</li>
+                    <li class="project-bullet-point">The application would then communicate to the server through a REST API built using AWS API Gateway. Every request would trigger an AWS Lambda instance to process the request.</li>
+                    <li class="project-bullet-point">All data was stored in an instance of the NoSQL database AWS DynamoDB.</li>
+                </ul> 
+            </div>
+            <div class=project-images>
+        
+            </div>
+        </div>
+        <div class="black-bar-divider"></div>
+        <!------------->
+        <!--Project 7-->
+        <!------------->
+        <div class=project>
+            <div class=project-name-div><p class="project-name">Web-based Game to Learn Physics</p></div>
+            <div class=project-tools-list>
+                <div class=logo-name-pair>  
+                    <img class="project-app-logo" src="assets/project_logos/html5_logo.svg">
+                    <p class="project-app-name">HTML</p>
+                </div>
+                <div class=vertical-line></div>
+                <div class=logo-name-pair>  
+                    <img class="project-app-logo" src="assets/project_logos/css3_logo.svg">
+                    <p class="project-app-name">CSS</p>
+                </div>
+                <div class=vertical-line></div>
+                <div class=logo-name-pair>  
+                    <img class="project-app-logo" src="assets/project_logos/javascript_logo.svg">
+                    <p class="project-app-name">Javascript</p>
+                </div>
+                <div class=vertical-line></div>
+                <div class=logo-name-pair>  
+                    <img class="project-app-logo" src="assets/project_logos/phaser_logo.svg">
+                    <p class="project-app-name">Phaser Game Framework</p>
+                </div>
+            </div>
+            <div class=project-description>
+                 <ul>
+                    <li class="project-bullet-point">Web-based game designed to teach the player about the relationships between different physical properties (distance, velocity, acceleration, gravity, etc).</li>
+                    <li class="project-bullet-point">Used the Phaser HTML5 game framework to create a 2D platformer. Main game component consists of the user drawing graphs that effect the characters movement and world properties once the level is started.</li>
+                    <li class="project-bullet-point">Worked in a team of four over the course of two semesters using the agile methodology.</li>
+                    <li class="project-bullet-point">Another HTML page was overlaid on top of the game containing the UI. Animated bars were used to show how the character's properties changed throughout the level.</li>
+                    <li class="project-bullet-point">Wrote a library capable of interpolating a polynomial equation given a set of points. All decimal coefficients where automatically converted into irreducible fractions.</li>
+                </ul> 
+            </div>
+            <div class=project-images>
+        
+            </div>
+        </div>
+    </section>
+          
+    <div class="bottom-padding"></div>
+
+    <!----------------------------------->
+    <!--------Experience Section--------->
+    <!----------------------------------->
+    <!--
+    <section id="experience-section" class="experience-section">
+        <a href="experience-section"></a>
+        Test
+        
+    </section>
+    -->
+
+    <!----------------------------------->
+    <!-----------About Section----------->
+    <!----------------------------------->
+    <!--
+    <section id="about-section" class="about-section">
+        <a href="about-section"></a>
+        
+    </section>
+    -->
+    <!----------------------------------->
+    <!---------Content Section----------->
+    <!----------------------------------->
+    <!--
+    <section id="contact-section" class="contact-section">
+        <a href="contact-section"></a>
+        Test
+        
+    </section>
+    -->
+    <script src="index.js"></script>
+  </body>
+</html> 

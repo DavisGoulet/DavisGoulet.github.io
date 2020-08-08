@@ -1,0 +1,12 @@
+<svg id="Component_6_1" data-name="Component 6 – 1" xmlns="http://www.w3.org/2000/svg" width="657" height="203" viewBox="0 0 657 203">
+  <rect id="Rectangle_41" data-name="Rectangle 41" width="42" height="91" transform="translate(297 52)"/>
+  <rect id="Rectangle_42" data-name="Rectangle 42" width="273" height="42" transform="translate(335 143)"/>
+  <g id="Ellipse_16" data-name="Ellipse 16" transform="translate(278)" fill="#fff" stroke="#000" stroke-width="10">
+    <circle cx="40" cy="40" r="40" stroke="none"/>
+    <circle cx="40" cy="40" r="35" fill="none"/>
+  </g>
+  <path id="Polygon_2" data-name="Polygon 2" d="M39.5,0,79,69H0Z" transform="translate(657 124) rotate(90)"/>
+  <path id="Subtraction_2" data-name="Subtraction 2" d="M-5437-1972a41.746,41.746,0,0,1-16.349-3.3,41.868,41.868,0,0,1-13.35-9,41.852,41.852,0,0,1-9-13.35A41.726,41.726,0,0,1-5479-2014a41.73,41.73,0,0,1,3.3-16.349,41.848,41.848,0,0,1,9-13.35,41.86,41.86,0,0,1,13.35-9A41.738,41.738,0,0,1-5437-2056v42h42a41.739,41.739,0,0,1-3.3,16.348,41.847,41.847,0,0,1-9,13.35,41.858,41.858,0,0,1-13.35,9A41.74,41.74,0,0,1-5437-1972Z" transform="translate(5776 2157)"/>
+  <rect id="Rectangle_44" data-name="Rectangle 44" width="273" height="42" transform="translate(53 143)" fill="rgba(0,0,0,0)"/>
+  <path id="Polygon_3" data-name="Polygon 3" d="M39.5,0,79,69H0Z" transform="translate(0 203) rotate(-90)" fill="rgba(0,0,0,0)"/>
+</svg>
